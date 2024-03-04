@@ -1,12 +1,16 @@
 # Azle Todo CRUD
 
-To run the tests on your local network:
+To run the tests on your local network (running on port 8000):
 ```sh
 yarn pretest
 yarn test
 ```
 
 ## API
+
+![Screen Shot 2024-03-04 at 09 35 07](https://github.com/sudoshreyansh/ICP-Todo-CRUD/assets/44190883/669f86c6-d2c3-457e-a51a-41ff069a1d85)
+
+
 
 `get_item: (text) -> (opt text) query`
 
