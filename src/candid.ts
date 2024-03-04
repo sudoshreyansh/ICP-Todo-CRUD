@@ -10,5 +10,5 @@ export const PaginatedTodoItems = Record({
     next: int32
 })
 
-export type TTodoItem = typeof TodoItem.tsType
-export type TPaginatedTodoItems = typeof PaginatedTodoItems.tsType
+export type TodoItem = typeof TodoItem.tsType
+export type PaginatedTodoItems = typeof PaginatedTodoItems.tsType

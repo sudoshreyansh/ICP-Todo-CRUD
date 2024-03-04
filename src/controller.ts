@@ -1,5 +1,5 @@
 import db from "./db";
-import { TPaginatedTodoItems } from "./candid";
+import { PaginatedTodoItems } from "./candid";
 import { None, Opt, Some, int32, text } from "azle";
 
 export function insertTodoItem(description: text): text {
@@ -12,7 +12,7 @@ export function getTodoItemById(id: text): Opt<text> {
     return None;
 }
 
-export function listTodoItems(pageNum: Opt<int32>): TPaginatedTodoItems {
+export function listTodoItems(pageNum: Opt<int32>): PaginatedTodoItems {
     return db.list(pageNum.Some ?? 0);
 }
 

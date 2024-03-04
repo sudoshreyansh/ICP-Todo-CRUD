@@ -1,6 +1,6 @@
 import { monotonicFactory } from "ulid";
 import { StableBTreeMap, text } from "azle"
-import { TPaginatedTodoItems } from "./candid";
+import { PaginatedTodoItems } from "./candid";
 
 export class TodoDB {
     private readonly PAGE_SIZE = 5; 
@@ -22,7 +22,7 @@ export class TodoDB {
         return this._db.get(id).Some;
     }
 
-    public list(page: number = 0): TPaginatedTodoItems {
+    public list(page: number = 0): PaginatedTodoItems {
         const items = this._db.items(page * this.PAGE_SIZE, this.PAGE_SIZE);
         const containsMore = this._db.len() > (page + 1) * this.PAGE_SIZE;
 
