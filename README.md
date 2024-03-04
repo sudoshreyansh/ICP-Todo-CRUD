@@ -6,6 +6,9 @@ yarn pretest
 yarn test
 ```
 
+Candid UI: [https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io....](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=fn7ae-dqaaa-aaaam-acdiq-cai) <br />
+Canister on ICP Dashboard: [https://dashboard.internetcomputer.org/canister...](https://dashboard.internetcomputer.org/canister/fn7ae-dqaaa-aaaam-acdiq-cai)
+
 ## API
 
 `get_item: (text) -> (opt text) query`
