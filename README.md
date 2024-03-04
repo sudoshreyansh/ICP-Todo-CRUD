@@ -2,6 +2,7 @@
 
 To run the tests on your local network (running on port 8000):
 ```sh
+dfx generate
 yarn pretest
 yarn test
 ```
