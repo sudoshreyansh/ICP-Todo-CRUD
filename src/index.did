@@ -1,0 +1,7 @@
+service: () -> {
+    delete_item: (text) -> ();
+    get_item: (text) -> (opt text) query;
+    insert_item: (text) -> (text);
+    list_items: (opt int32) -> (record {next:int32; items:vec record {id:text; description:text}}) query;
+    update_item: (text, text) -> ();
+}

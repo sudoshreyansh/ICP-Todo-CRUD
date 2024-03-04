@@ -1,0 +1,26 @@
+{
+    "canisters": {
+        "crud": {
+            "type": "custom",
+            "main": "src/index.ts",
+            "candid": "src/index.did",
+            "build": "npx azle crud",
+            "wasm": ".azle/crud/crud.wasm",
+            "gzip": true,
+            "declarations": {
+                "output": "test/dfx_generated/crud",
+                "node_compatibility": true
+            },
+            "metadata": [
+                {
+                    "name": "candid:service",
+                    "path": "src/index.did"
+                },
+                {
+                    "name": "cdk:name",
+                    "content": "azle"
+                }
+            ]
+        }
+    }
+}
